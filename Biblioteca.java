@@ -10,7 +10,7 @@ public class Biblioteca {
         
        
         String n = JOptionPane.showInputDialog(null, " Digite seu nome");
-        JOptionPane.showMessageDialog(null, "Meu nome é : "+ n);
+        JOptionPane.showMessageDialog(null, "Meu nome é: "+ n);
  
         String x = JOptionPane.showInputDialog(null, " Digite seu peso");
         double kg = Double.parseDouble(x);
@@ -24,6 +24,7 @@ public class Biblioteca {
         if (resul <= 18.5){
             JOptionPane.showMessageDialog(null, "O IMC é : " + String.format("%.2f",  resul ));
             JOptionPane.showMessageDialog(null, "Abaixo do peso", "Aviso!", JOptionPane.INFORMATION_MESSAGE);
+            //JOptionPane.showMessageDialog(null, "Abaixo do peso", " ", -1);
         } else if (resul >= 18.5 && resul <= 24.9){
             JOptionPane.showMessageDialog(null, "O IMC é : " + String.format("%.2f",  resul ));
             JOptionPane.showMessageDialog(null, "Peso normal");
